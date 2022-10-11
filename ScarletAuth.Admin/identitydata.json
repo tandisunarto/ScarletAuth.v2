@@ -1,0 +1,95 @@
+﻿{
+  "IdentityData": {
+    "Roles": [
+      {
+        "Name": "admin"
+      }
+    ],
+    "Users": [
+      {
+        "Username": "admin",
+        "Password": "Pass123$",
+        "Email": "tandisunarto@live.com",
+        "Roles": [
+          "admin"
+        ],
+        "Claims": [
+          {
+            "Type": "name",
+            "Value": "Administrator"
+          },
+          {
+            "Type": "given_name",
+            "Value": "Administrator"
+          },
+          {
+            "Type": "family_name",
+            "Value": "Administrator"
+          },
+          {
+            "Type": "email",
+            "Value": "tandi.sunarto@hotmail.com"
+          },
+          {
+            "Type": "email_verified",
+            "Value": true
+          },
+          {
+            "Type": "website",
+            "Value": "https://admin.net"
+          },
+          {
+            "Type": "address",
+            "Value": {
+              "street_address": "2600 Tower Oaks Blvd",
+              "locality": "Rockville",
+              "postal_code": 20852,
+              "country": "United States"
+            }
+          }
+        ]
+      },
+      {
+        "Username": "tandi",
+        "Password": "Pass123$",
+        "Email": "tandi.sunarto@hotmail.com",
+        "Roles": [],
+        "Claims": [
+          {
+            "Type": "name",
+            "Value": "Tandi Sunarto"
+          },
+          {
+            "Type": "given_name",
+            "Value": "Tandi Sunarto"
+          },
+          {
+            "Type": "family_name",
+            "Value": "Tan"
+          },
+          {
+            "Type": "email",
+            "Value": "tandi.sunarto@hotmail.com"
+          },
+          {
+            "Type": "email_verified",
+            "Value": true
+          },
+          {
+            "Type": "website",
+            "Value": "https://tandi.net"
+          },
+          {
+            "Type": "address",
+            "Value": {
+              "street_address": "Jl Sudirman No. 136",
+              "locality": "Tebing Tinggi",
+              "postal_code": 1235,
+              "country": "Indonesia"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
