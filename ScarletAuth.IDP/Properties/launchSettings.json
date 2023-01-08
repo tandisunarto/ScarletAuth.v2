@@ -2,11 +2,11 @@
   "profiles": {
     "ScarletAuth.IDP": {
       "commandName": "Project",
-      "launchBrowser": true,
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "https://localhost:44310"
+        "environmentVariables": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+        },
+      "launchBrowser": false,
+      "applicationUrl": "https://localhost:55300"
     }
   }
 }

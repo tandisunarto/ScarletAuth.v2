@@ -68,9 +68,9 @@ public static class Config
 
                 AllowedGrantTypes = GrantTypes.ClientCredentials,
 
-                RedirectUris = { "https://localhost:44300/signin-oidc" },
-                FrontChannelLogoutUri = "https://localhost:44300/signout-oidc",
-                PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
+                RedirectUris = { "https://localhost:55300/signin-oidc" },
+                FrontChannelLogoutUri = "https://localhost:55300/signout-oidc",
+                PostLogoutRedirectUris = { "https://localhost:55300/signout-callback-oidc" },
 
                 AllowOfflineAccess = true,
                 AllowedScopes = { "openid", "profile", "scope2" }
@@ -84,9 +84,9 @@ public static class Config
 
                 AllowedGrantTypes = GrantTypes.Code,
 
-                RedirectUris = { "https://localhost:44300/signin-oidc" },
-                FrontChannelLogoutUri = "https://localhost:44300/signout-oidc",
-                PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
+                RedirectUris = { "https://localhost:55300/signin-oidc" },
+                FrontChannelLogoutUri = "https://localhost:55300/signout-oidc",
+                PostLogoutRedirectUris = { "https://localhost:55300/signout-callback-oidc" },
 
                 AllowOfflineAccess = true,
                 AllowedScopes = { "openid", "profile", "scope2" }
@@ -98,9 +98,9 @@ public static class Config
 
                 AllowedGrantTypes = GrantTypes.Code,
 
-                RedirectUris = { "https://localhost:44300/signin-oidc" },
-                FrontChannelLogoutUri = "https://localhost:44300/signout-oidc",
-                PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
+                RedirectUris = { "https://localhost:55300/signin-oidc" },
+                FrontChannelLogoutUri = "https://localhost:55300/signout-oidc",
+                PostLogoutRedirectUris = { "https://localhost:55300/signout-callback-oidc" },
 
                 AllowOfflineAccess = true,
                 AllowedScopes = { "openid", "profile", "scope2" }
@@ -112,9 +112,9 @@ public static class Config
 
                 AllowedGrantTypes = GrantTypes.Code,
 
-                RedirectUris = { "https://localhost:44300/signin-oidc" },
-                FrontChannelLogoutUri = "https://localhost:44300/signout-oidc",
-                PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
+                RedirectUris = { "https://localhost:55300/signin-oidc" },
+                FrontChannelLogoutUri = "https://localhost:55300/signout-oidc",
+                PostLogoutRedirectUris = { "https://localhost:55300/signout-callback-oidc" },
 
                 AllowOfflineAccess = true,
                 AllowedScopes = { "openid", "profile", "scope2" }
@@ -123,14 +123,14 @@ public static class Config
             {
                 ClientId = "scarletauth.adminui",
                 ClientName = "scarletauth.adminui",
-                ClientUri = "https://localhost:44303",
+                ClientUri = "https://localhost:55303",
                 AllowedGrantTypes = GrantTypes.Code,
                 RequirePkce = true,
                 ClientSecrets = { new Secret("A73560AE-8E8A-4508-80F6-B107EA362AB4".Sha256()) },
-                RedirectUris = { "https://localhost:44303/signin-oidc" },
-                FrontChannelLogoutUri = "https://localhost:44303/signout-oidc",
-                PostLogoutRedirectUris = { "https://localhost:44303/signout-callback-oidc" },
-                AllowedCorsOrigins = { "https://localhost:44303" },
+                RedirectUris = { "https://localhost:55303/signin-oidc" },
+                FrontChannelLogoutUri = "https://localhost:55303/signout-oidc",
+                PostLogoutRedirectUris = { "https://localhost:55303/signout-callback-oidc" },
+                AllowedCorsOrigins = { "https://localhost:55303" },
                 AllowedScopes = { "openid", "email", "profile", "roles" }
             },
             new Client
@@ -140,9 +140,9 @@ public static class Config
                 AllowedGrantTypes = GrantTypes.Code,
                 RequireClientSecret = false,
                 RequirePkce = true,
-                RedirectUris = { "https://localhost:44302/swagger/oauth2-redirect.html" },
+                RedirectUris = { "https://localhost:55302/swagger/oauth2-redirect.html" },
                 AllowedScopes = { "scarletauth.adminui_api" },
-                AllowedCorsOrigins = { "https://localhost:44302" }
+                AllowedCorsOrigins = { "https://localhost:55302" }
             }
         };
 }

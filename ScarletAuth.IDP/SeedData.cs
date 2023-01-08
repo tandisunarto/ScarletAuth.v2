@@ -8,6 +8,7 @@ using Duende.IdentityServer.EntityFramework.Mappers;
 using Microsoft.Extensions.DependencyInjection;
 using Duende.IdentityServer.EntityFramework.DbContexts;
 using ScarletAuth.Admin.EntityFramework.Shared.Entities.Identity;
+using ScarletAuth.Admin.EntityFramework.Shared.DbContexts;
 
 namespace ScarletAuth.IDP;
 
@@ -23,7 +24,7 @@ public class SeedData
     {
         using (var scope = app.Services.GetRequiredService<IServiceScopeFactory>().CreateScope())
         {
-            var context = scope.ServiceProvider.GetService<ApplicationDbContext>();
+            var context = scope.ServiceProvider.GetService<AdminIdentityDbContext>();
             context.Database.Migrate();
 
             var userMgr = scope.ServiceProvider.GetRequiredService<UserManager<UserIdentity>>();

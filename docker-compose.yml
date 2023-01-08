@@ -5,7 +5,7 @@ services:
     container_name: nginx
     ports:
       - '80:80'
-      - '443:443'
+      - '443:553'
     volumes:
       - '/var/run/docker.sock:/tmp/docker.sock:ro'
       - './shared/nginx/vhost.d:/etc/nginx/vhost.d'

@@ -82,160 +82,9 @@
         ],
         "Clients": [
             {
-                "ClientId": "mobile.client",
-                "ClientName": "Mobile Application Client",
-                "ClientUri": "https://localhost:44303",
-                "AllowedGrantTypes": [
-                    "authorization_code",
-                    "client_credentials"
-                ],
-                "RequirePkce": true,
-                "ClientSecrets": [
-                    {
-                        "Value": "4A94979D-01D8-47EF-9299-5D7D74318A0E"
-                    }
-                ],
-                "RedirectUris": [
-                    "https://localhost:44303/signin-oidc"
-                ],
-                "FrontChannelLogoutUri": "https://localhost:44303/signout-oidc",
-                "PostLogoutRedirectUris": [
-                    "https://localhost:44303/signout-callback-oidc"
-                ],
-                "AllowedCorsOrigins": [
-                    "https://localhost:44303"
-                ],
-                "AllowedScopes": [
-                    "openid",
-                    "email",
-                    "profile",
-                    "roles"
-                ]
-            },
-            {
-                "ClientId": "services.client",
-                "ClientName": "Hosted Services Client",
-                "ClientUri": "https://localhost:44303",
-                "AllowedGrantTypes": [
-                    "client_credentials"
-                ],
-                "RequirePkce": true,
-                "ClientSecrets": [
-                    {
-                        "Value": "A8579D08-95C1-4FE2-8BB9-A25445158AA8"
-                    }
-                ],
-                "RedirectUris": [
-                    "https://localhost:44303/signin-oidc"
-                ],
-                "FrontChannelLogoutUri": "https://localhost:44303/signout-oidc",
-                "PostLogoutRedirectUris": [
-                    "https://localhost:44303/signout-callback-oidc"
-                ],
-                "AllowedCorsOrigins": [
-                    "https://localhost:44303"
-                ],
-                "AllowedScopes": [
-                    "openid",
-                    "email",
-                    "profile",
-                    "roles"
-                ]
-            },
-            {
-                "ClientId": "web.interactive",
-                "ClientName": "Web Application Client",
-                "ClientUri": "https://localhost:44303",
-                "AllowedGrantTypes": [
-                    "authorization_code"
-                ],
-                "RequirePkce": true,
-                "ClientSecrets": [
-                    {
-                        "Value": "D9859EEA-EBDF-4DCC-BC86-07865A6B0FFB"
-                    }
-                ],
-                "RedirectUris": [
-                    "https://localhost:44303/signin-oidc"
-                ],
-                "FrontChannelLogoutUri": "https://localhost:44303/signout-oidc",
-                "PostLogoutRedirectUris": [
-                    "https://localhost:44303/signout-callback-oidc"
-                ],
-                "AllowedCorsOrigins": [
-                    "https://localhost:44303"
-                ],
-                "AllowedScopes": [
-                    "openid",
-                    "email",
-                    "profile",
-                    "roles"
-                ]
-            },
-            {
-                "ClientId": "spa.interactive",
-                "ClientName": "SPA Client",
-                "ClientUri": "https://localhost:44303",
-                "AllowedGrantTypes": [
-                    "authorization_code"
-                ],
-                "RequirePkce": true,
-                "ClientSecrets": [
-                    {
-                        "Value": "D11F9E60-2A89-48F1-9D3B-F65E8CE1CB21"
-                    }
-                ],
-                "RedirectUris": [
-                    "https://localhost:44303/signin-oidc"
-                ],
-                "FrontChannelLogoutUri": "https://localhost:44303/signout-oidc",
-                "PostLogoutRedirectUris": [
-                    "https://localhost:44303/signout-callback-oidc"
-                ],
-                "AllowedCorsOrigins": [
-                    "https://localhost:44303"
-                ],
-                "AllowedScopes": [
-                    "openid",
-                    "email",
-                    "profile",
-                    "roles"
-                ]
-            },
-            {
-                "ClientId": "blazor.interactive",
-                "ClientName": "Blazor Client",
-                "ClientUri": "https://localhost:44303",
-                "AllowedGrantTypes": [
-                    "authorization_code"
-                ],
-                "RequirePkce": true,
-                "ClientSecrets": [
-                    {
-                        "Value": "2D16BE15-949F-44DF-8DB6-0554FE038C43"
-                    }
-                ],
-                "RedirectUris": [
-                    "https://localhost:44303/signin-oidc"
-                ],
-                "FrontChannelLogoutUri": "https://localhost:44303/signout-oidc",
-                "PostLogoutRedirectUris": [
-                    "https://localhost:44303/signout-callback-oidc"
-                ],
-                "AllowedCorsOrigins": [
-                    "https://localhost:44303"
-                ],
-                "AllowedScopes": [
-                    "openid",
-                    "email",
-                    "profile",
-                    "roles"
-                ]
-            },
-            {
                 "ClientId": "scarletauth.adminui",
                 "ClientName": "Scarlet Auth Admin UI",
-                "ClientUri": "https://localhost:44303",
+                "ClientUri": "https://localhost:55310",
                 "AllowedGrantTypes": [
                     "authorization_code"
                 ],
@@ -246,16 +95,16 @@
                     }
                 ],
                 "RedirectUris": [
-                    "https://localhost:44303/signin-oidc",
+                    "https://localhost:55310/signin-oidc",
                     "https://scarletauth-admin.azurewebsites.net/signin-oidc"
                 ],
                 "FrontChannelLogoutUri": "https://scarletauth-admin.azurewebsites.net/signout-oidc",
                 "PostLogoutRedirectUris": [
-                    "https://localhost:44303/signout-callback-oidc",
+                    "https://localhost:55310/signout-callback-oidc",
                     "https://scarletauth-admin.azurewebsites.net/signout-callback-oidc"
                 ],
                 "AllowedCorsOrigins": [
-                    "https://localhost:44303",
+                    "https://localhost:55310",
                     "https://scarletauth-admin.azurewebsites.net"
                 ],
                 "AllowedScopes": [
@@ -274,13 +123,164 @@
                 "RequireClientSecret": false,
                 "RequirePkce": true,
                 "RedirectUris": [
-                    "https://localhost:44302/swagger/oauth2-redirect.html"
+                    "https://localhost:55310/swagger/oauth2-redirect.html"
                 ],
                 "AllowedScopes": [
                     "scarlet.auth.v2_api"
                 ],
                 "AllowedCorsOrigins": [
-                    "https://localhost:44302"
+                    "https://localhost:55310"
+                ]
+            },
+            {
+                "ClientId": "web.interactive",
+                "ClientName": "Web Application Client",
+                "ClientUri": "https://localhost:55320",
+                "AllowedGrantTypes": [
+                    "authorization_code"
+                ],
+                "RequirePkce": true,
+                "ClientSecrets": [
+                    {
+                        "Value": "D9859EEA-EBDF-4DCC-BC86-07865A6B0FFB"
+                    }
+                ],
+                "RedirectUris": [
+                    "https://localhost:55320/signin-oidc"
+                ],
+                "FrontChannelLogoutUri": "https://localhost:55320/signout-oidc",
+                "PostLogoutRedirectUris": [
+                    "https://localhost:55320/signout-callback-oidc"
+                ],
+                "AllowedCorsOrigins": [
+                    "https://localhost:55320"
+                ],
+                "AllowedScopes": [
+                    "openid",
+                    "email",
+                    "profile",
+                    "roles"
+                ]
+            },
+            {
+                "ClientId": "spa.interactive",
+                "ClientName": "SPA Client",
+                "ClientUri": "https://localhost:55330",
+                "AllowedGrantTypes": [
+                    "authorization_code"
+                ],
+                "RequirePkce": true,
+                "ClientSecrets": [
+                    {
+                        "Value": "D11F9E60-2A89-48F1-9D3B-F65E8CE1CB21"
+                    }
+                ],
+                "RedirectUris": [
+                    "https://localhost:55330/signin-oidc"
+                ],
+                "FrontChannelLogoutUri": "https://localhost:55330/signout-oidc",
+                "PostLogoutRedirectUris": [
+                    "https://localhost:55330/signout-callback-oidc"
+                ],
+                "AllowedCorsOrigins": [
+                    "https://localhost:55330"
+                ],
+                "AllowedScopes": [
+                    "openid",
+                    "email",
+                    "profile",
+                    "roles"
+                ]
+            },
+            {
+                "ClientId": "blazor.interactive",
+                "ClientName": "Blazor Client",
+                "ClientUri": "https://localhost:55340",
+                "AllowedGrantTypes": [
+                    "authorization_code"
+                ],
+                "RequirePkce": true,
+                "ClientSecrets": [
+                    {
+                        "Value": "2D16BE15-949F-44DF-8DB6-0554FE038C43"
+                    }
+                ],
+                "RedirectUris": [
+                    "https://localhost:55340/signin-oidc"
+                ],
+                "FrontChannelLogoutUri": "https://localhost:55340/signout-oidc",
+                "PostLogoutRedirectUris": [
+                    "https://localhost:55340/signout-callback-oidc"
+                ],
+                "AllowedCorsOrigins": [
+                    "https://localhost:55340"
+                ],
+                "AllowedScopes": [
+                    "openid",
+                    "email",
+                    "profile",
+                    "roles"
+                ]
+            },
+            {
+                "ClientId": "services.client",
+                "ClientName": "Hosted Services Client",
+                "ClientUri": "https://localhost:55350",
+                "AllowedGrantTypes": [
+                    "client_credentials"
+                ],
+                "RequirePkce": true,
+                "ClientSecrets": [
+                    {
+                        "Value": "A8579D08-95C1-4FE2-8BB9-A25445158AA8"
+                    }
+                ],
+                "RedirectUris": [
+                    "https://localhost:55350/signin-oidc"
+                ],
+                "FrontChannelLogoutUri": "https://localhost:55350/signout-oidc",
+                "PostLogoutRedirectUris": [
+                    "https://localhost:55350/signout-callback-oidc"
+                ],
+                "AllowedCorsOrigins": [
+                    "https://localhost:55350"
+                ],
+                "AllowedScopes": [
+                    "openid",
+                    "email",
+                    "profile",
+                    "roles"
+                ]
+            },
+            {
+                "ClientId": "mobile.client",
+                "ClientName": "Mobile Application Client",
+                "ClientUri": "https://localhost:55360",
+                "AllowedGrantTypes": [
+                    "authorization_code",
+                    "client_credentials"
+                ],
+                "RequirePkce": true,
+                "ClientSecrets": [
+                    {
+                        "Value": "4A94979D-01D8-47EF-9299-5D7D74318A0E"
+                    }
+                ],
+                "RedirectUris": [
+                    "https://localhost:55360/signin-oidc"
+                ],
+                "FrontChannelLogoutUri": "https://localhost:55360/signout-oidc",
+                "PostLogoutRedirectUris": [
+                    "https://localhost:55360/signout-callback-oidc"
+                ],
+                "AllowedCorsOrigins": [
+                    "https://localhost:55360"
+                ],
+                "AllowedScopes": [
+                    "openid",
+                    "email",
+                    "profile",
+                    "roles"
                 ]
             }
         ]
