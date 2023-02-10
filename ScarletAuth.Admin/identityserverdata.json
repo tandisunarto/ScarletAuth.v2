@@ -64,11 +64,26 @@
         "ApiScopes": [
             {
                 "Name": "scarlet.auth.v2_api",
-                "DisplayName": "scarlet.auth.v2_api",
+                "DisplayName": "Scarlet Auth.v2 API",
                 "Required": true,
                 "UserClaims": [
                     "role",
                     "name"
+                ]
+            },
+            {
+                "Name": "scarlet.star.wars.web.api",
+                "DisplayName": "Scarlet Web API",
+                "Required": true,
+                "UserClaims": [
+                    "weather",
+                    "star.wars.fullaccess",
+                    "star.wars.films",
+                    "star.wars.people",
+                    "star.wars.species",
+                    "star.wars.vehicles",
+                    "star.wars.starships",
+                    "star.wars.planets"
                 ]
             }
         ],
@@ -77,6 +92,12 @@
                 "Name": "scarlet.auth.v2_api",
                 "Scopes": [
                     "scarlet.auth.v2_api"
+                ]
+            },
+            {
+                "Name": "scarlet.web.api",
+                "Scopes": [
+                    "scarlet.star.wars.web.api"
                 ]
             }
         ],
@@ -159,7 +180,8 @@
                     "openid",
                     "email",
                     "profile",
-                    "roles"
+                    "roles",
+                    "scarlet.web.api"
                 ]
             },
             {
