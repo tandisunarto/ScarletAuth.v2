@@ -85,6 +85,9 @@
                     "star.wars.starships",
                     "star.wars.planets"
                 ]
+            },
+            {
+                "Name": "starwars.api.fullaccess"
             }
         ],
         "ApiResources": [
@@ -95,9 +98,9 @@
                 ]
             },
             {
-                "Name": "scarlet.web.api",
+                "Name": "starwars.api",
                 "Scopes": [
-                    "scarlet.star.wars.web.api"
+                    "starwars.api.fullaccess"
                 ]
             }
         ],
@@ -181,7 +184,7 @@
                     "email",
                     "profile",
                     "roles",
-                    "scarlet.web.api"
+                    "starwars.api.fullaccess"
                 ]
             },
             {
